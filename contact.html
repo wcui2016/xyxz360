@@ -63,7 +63,7 @@
             <p><strong>网址：</strong><a href="http://www.xyxz360.cn" target="_blank" rel="noreferrer">www.xyxz360.cn</a></p>
             <p><strong>地址：</strong>北京市海淀区清河中街66号院1号楼10层</p>
             <p><strong>联系电话：</strong>17710056213</p>
-            <p><strong>业务方向：</strong>软硬件技术开发、嵌入式系统、AI与后台平台建设</p>
+            <p><strong>业务方向：</strong>硬件设计、软硬件技术开发、嵌入式系统、AI与后台平台建设</p>
           </div>
           <div class="info-card">
             <h3>合作方式</h3>
@@ -74,20 +74,20 @@
 
         <div class="contact-form-card">
           <h3>预约咨询</h3>
-          <form class="contact-form">
+          <form class="contact-form" name="user-information" method="POST" action="https://xyxz360.netlify.app/" netlify>
             <label>
               姓名
-              <input type="text" placeholder="请输入您的姓名" />
+              <input type="text" name="name" placeholder="请输入您的姓名" required />
             </label>
             <label>
               联系方式
-              <input type="text" placeholder="邮箱或手机号" />
+              <input type="text" name="phone" placeholder="手机号" required />
             </label>
             <label>
               需求说明
-              <textarea rows="5" placeholder="请描述您的项目方向、目标平台与时间要求"></textarea>
+              <textarea name="message" rows="5" placeholder="请描述您的项目方向、目标平台与时间要求" required></textarea>
             </label>
-            <button class="btn btn-primary" type="button">提交咨询</button>
+            <button class="btn btn-primary" type="submit">提交咨询</button>
           </form>
         </div>
       </section>
